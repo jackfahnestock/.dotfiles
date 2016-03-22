@@ -1,3 +1,3 @@
-# Testing Shit Out
+# One Moment
 
-(I'm new to this stuff.)
+Just figuring out how to set up these dotfiles.
