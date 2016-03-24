@@ -95,7 +95,7 @@ zstyle ':prezto:module:history-substring-search' globbing-flags ''
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'pure'
+zstyle ':prezto:module:prompt' theme 'agnoster'
 
 
 #==============================
@@ -167,4 +167,4 @@ zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 #==============================
 
 # Load SSH keys (only on Linux)
-zstyle ':prezto:module:ssh:load' identities 'id_rsa'
+# zstyle ':prezto:module:ssh:load' identities 'id_rsa'

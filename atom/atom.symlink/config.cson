@@ -1,0 +1,29 @@
+"*":
+  core:
+    ignoredNames: [
+      ".sass-cache"
+      ".git"
+      ".DS_Store"
+      "node_modules"
+      ".jekyll-metadata"
+      "Gemfile.lock"
+      "npm-debug.log"
+    ]
+  editor:
+    fontFamily: "input mono"
+    fontSize: 16
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+  emmet: {}
+  "exception-reporting":
+    userId: "b0b46957-3dff-7a8d-47a4-c22f5de7b8ae"
+  pigments:
+    markerType: "dot"
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false

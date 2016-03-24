@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Sets OS X defaults
+
+$ZSH/osx/defaults.sh
