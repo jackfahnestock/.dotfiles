@@ -2,11 +2,9 @@
 # Sets Prezto options.
 #
 
-#==============================
-#
+#===============================================================================
 # General
-#
-#==============================
+#===============================================================================
 
 # Color output (auto set to 'no' on dumb terminals).
 zstyle ':prezto:*:*' color 'yes'
@@ -33,13 +31,27 @@ zstyle ':prezto:load' pmodule \
   'ssh' \
   'prompt' \
   'syntax-highlighting' \
-  'history-substring-search'
+  'history-substring-search' \
+  'autosuggestions' \
+  'rails' \
+  'tmux'
 
-#==============================
-#
+#===============================================================================
+# Terminal
+#===============================================================================
+
+  # Auto set the tab and window titles.
+  zstyle ':prezto:module:terminal' auto-title 'yes'
+
+  # Set the window title format.
+  zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
+
+  # Set the tab title format.
+  zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
+
+#===============================================================================
 # Editor
-#
-#==============================
+#===============================================================================
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'emacs'
@@ -48,11 +60,9 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 
-#==============================
-#
+#===============================================================================
 # Git
-#
-#==============================
+#===============================================================================
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 zstyle ':prezto:module:git:status:ignore' submodules 'all'
@@ -60,37 +70,18 @@ zstyle ':prezto:module:git:status:ignore' submodules 'all'
 # Speed up Git/ZSH by checking for simple "dirty" status
 zstyle ':prezto:module:git:info' verbose 'no'
 
-#==============================
-#
-# GNU Utility
-#
-#==============================
 
-# Set the command prefix on non-GNU systems.
-zstyle ':prezto:module:gnu-utility' prefix 'g'
+#===============================================================================
+# SSH
+#===============================================================================
 
-
-#==============================
-#
-# History Substring Search
-#
-#==============================
-
-# Set the query found color.
-zstyle ':prezto:module:history-substring-search:color' found ''
-
-# Set the query not found color.
-zstyle ':prezto:module:history-substring-search:color' not-found ''
-
-# Set the search globbing flags.
-zstyle ':prezto:module:history-substring-search' globbing-flags ''
+# Load SSH keys (only on Linux)
+# zstyle ':prezto:module:ssh:load' identities 'id_rsa'
 
 
-#==============================
-#
+#===============================================================================
 # Prompt
-#
-#==============================
+#===============================================================================
 
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
@@ -98,23 +89,9 @@ zstyle ':prezto:module:history-substring-search' globbing-flags ''
 zstyle ':prezto:module:prompt' theme 'agnoster'
 
 
-#==============================
-#
-# Screen
-#
-#==============================
-
-# Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:screen:auto-start' local 'yes'
-
-# Auto start a session when Zsh is launched in a SSH connection.
-zstyle ':prezto:module:screen:auto-start' remote 'yes'
-
-#==============================
-#
+#===============================================================================
 # Syntax Highlighting
-#
-#==============================
+#===============================================================================
 
 zstyle ':prezto:module:syntax-highlighting' color 'yes'
 
@@ -128,43 +105,58 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'root'
 
 
-#==============================
-#
-# Terminal
-#
-#==============================
+#===============================================================================
+# History Substring Search
+#===============================================================================
 
-# Auto set the tab and window titles.
-zstyle ':prezto:module:terminal' auto-title 'yes'
+# Set the query found color.
+zstyle ':prezto:module:history-substring-search:color' found ''
 
-# Set the window title format.
-zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
+# Set the query not found color.
+zstyle ':prezto:module:history-substring-search:color' not-found ''
 
-# Set the tab title format.
-zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
+# Set the search globbing flags.
+zstyle ':prezto:module:history-substring-search' globbing-flags ''
 
 
-#==============================
-#
-# Tmux
-#
-#==============================
+#===============================================================================
+# Auto Suggestions
+#===============================================================================
+
+# Enable highlighting for this module only.
+zstyle ':prezto:module:autosuggestions' color 'yes'
+
+# Set the query found color.
+zstyle ':prezto:module:autosuggestions:color' found ''
+
+#===============================================================================
+# GNU Utility
+#===============================================================================
+
+# Set the command prefix on non-GNU systems.
+zstyle ':prezto:module:gnu-utility' prefix 'g'
+
+
+#===============================================================================
+# Screen
+#===============================================================================
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+zstyle ':prezto:module:screen:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+zstyle ':prezto:module:screen:auto-start' remote 'yes'
+
+
+#===============================================================================
+# Tmux
+#===============================================================================
+
+# Auto start a session when Zsh is launched in a local terminal.
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+
+# Auto start a session when Zsh is launched in a SSH connection.
+# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
 zstyle ':prezto:module:tmux:iterm' integrate 'yes'
-
-
-#==============================
-#
-# SSH
-#
-#==============================
-
-# Load SSH keys (only on Linux)
-# zstyle ':prezto:module:ssh:load' identities 'id_rsa'

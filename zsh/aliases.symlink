@@ -1,0 +1,46 @@
+
+
+alias show='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias stats='iStats'
+alias c='clear'
+
+# A handy utility for making and then cd-ing to a directory
+function __mkc {
+  if [ "$1x" != "x" ]; then
+    mkdir "$1"
+    cd "$1"
+  fi
+}
+
+alias mkc="__mkc"
+
+# Alias to nvim
+alias vim="nvim"
+
+# Make editing config files easier/less meta
+alias vimrc="vim $HOME/.vimrc"
+alias zshrc="vim $HOME/.zshrc"
+alias dotfiles="cd $HOME/dotfiles"
+alias reload="source $HOME/.zshrc"
+
+# `bundle exec` can be a bit long.
+alias be="bundle exec"
+
+# Easily jump to the root of a git repo
+alias groot='cd "$(git rev-parse --show-toplevel)"'
+
+# Git aliases
+alias g='git'
+alias gap='git add -p'
+alias gdt='git difftool'
+alias gcm='git commit -m'
+alias gps='git push'
+alias gpl='git pull'
+alias grb='git fetch origin && git rebase origin/master'
+alias gmt='git mergetool'
+alias gs='git status -sb'
+alias gl='git lg'
+alias s='git status -sb'
+
+setopt complete_aliases

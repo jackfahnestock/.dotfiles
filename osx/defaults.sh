@@ -1,31 +1,22 @@
 #!/usr/bin/env bash
 
+# Most settings borrowed from https://mths.be/osx
+
 # Ask for the administrator password upfront
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+# Keep-alive: update existing `sudo` time stamp until `defaults` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ################################################################################
 # General UI/UX                                                                #
 ################################################################################
 
+# Set dark mode as standard
+defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
+
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
-
-# Menu bar: hide the Time Machine, Volume, and User icons
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		# "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
-defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu"
-#	"/System/Library/CoreServices/Menu Extras/Clock.menu"
-
 
 # Disable the over-the-top focus ring animation
 defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
@@ -91,11 +82,8 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Finder                                                                       #
 ################################################################################
 
-# Show icons for hard drives, servers, and removable media on the desktop
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-# defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
-# defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+# Show the ~/Library folder
+chflags nohidden ~/Library
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -136,9 +124,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Dock, Dashboard, and hot corners                                             #
 ################################################################################
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 48
-
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
 
@@ -164,13 +149,16 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 # Don’t show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
+# set default appearance for dock
+defaults write com.apple.dock autohide -int 1
+defaults write com.apple.dock magnification -int 0
+defaults write com.apple.dock orientation -string left
+defaults write com.apple.dock tilesize -int 48 #(icon size)
+
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
 # Fast Dock animation
 defaults write com.apple.dock autohide-time-modifier -float .1
-
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
 
 # Use column view in all Finder windows by default
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"

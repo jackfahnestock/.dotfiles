@@ -39,77 +39,15 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # Aliases
 #===============================================================================
 
-alias show='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias temp='iStats'
-alias c='clear'
-
-# A handy utility for making and then cd-ing to a directory
-function __mkc {
-  if [ "$1x" != "x" ]; then
-    mkdir "$1"
-    cd "$1"
-  fi
-}
-
-alias mkc="__mkc"
-
-# Alias to nvim
-alias vim="nvim"
-
-# Make editing config files easier/less meta
-alias vimrc="vim $HOME/.vimrc"
-alias zshrc="vim $HOME/.zshrc"
-alias dotfiles="cd $HOME/.dotfiles"
-alias reload="source $HOME/.zshrc"
-
-# Jekyll helper aliases
-alias jb="bundle exec jekyll build --config _config.yml,_config_local.yml"
-alias js="bundle exec jekyll serve --watch --config _config.yml,_config_local.yml"
-
-# `bundle exec` can be a bit long.
-alias be="bundle exec"
-
-# Easily jump to the root of a git repo
-alias groot='cd "$(git rev-parse --show-toplevel)"'
-
-# Ag is in Brewfile and it's faster, but I keep forgetting
-alias ack='ag'
-
-# Convenience alias for Python's Simple HTTP server
-alias httpserve='python -m SimpleHTTPServer 8000'
-
-# Git aliases
-alias g='git'
-alias gap='git add -p'
-alias gdt='git difftool'
-alias gcm='git commit -m'
-alias gps='git push'
-alias gpl='git pull'
-alias grb='git fetch origin && git rebase origin/master'
-alias gmt='git mergetool'
-alias gs='git status -sb'
-alias gl='git lg'
-alias s='git status -sb'
-
-setopt complete_aliases
+source $HOME/dotfiles/zsh/aliases.symlink
 
 #===============================================================================
 # Wrap it up
 #===============================================================================
 
 # Let our terminal know about italic fonts
-if [[ -s "$HOME/.dotfiles/zsh/xterm-256color-italic.terminfo" ]]; then
-  tic "$HOME/.dotfiles/zsh/xterm-256color-italic.terminfo"
-fi
-
-# Add private aliases and functions
-if [[ -s "${ZDOTDIR:-$HOME}/.zprivate" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprivate"
-fi
-
-if [[ -s "${ZDOTDIR:-$HOME}/.envvars" ]]; then
-  source "${ZDOTDIR:-$HOME}/.envvars"
+if [[ -s "$HOME/dotfiles/zsh/xterm-256color-italic.terminfo" ]]; then
+  tic "$HOME/dotfiles/zsh/xterm-256color-italic.terminfo"
 fi
 
 # Activate virtual environment if one exists
@@ -117,9 +55,9 @@ if [[ -s "$HOME/.virt_env/bin/activate" ]]; then
   source "$HOME/.virt_env/bin/activate"
 fi
 
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#export PATH="$HOME/.bin:$PATH"
-#eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.bin:$PATH"
+# eval "$(rbenv init -)"
 
 # Set up themes
 autoload -U promptinit && promptinit
@@ -129,5 +67,4 @@ prompt agnoster
 PURE_GIT_DELAY_DIRTY_CHECK=5
 
 # Set a custom prompt symbol
-#PURE_PROMPT_SYMBOL="❯"
-PURE_PROMPT_SYMBOL="&"
+# PURE_PROMPT_SYMBOL="❯"

@@ -89,7 +89,7 @@
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles</string>
+	<string>~/dotfiles/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -125,7 +125,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1160 147 231 329 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>722 198 445 502 0 0 1440 877 </string>
+	<string>722 198 445 368 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>445 400 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -133,9 +133,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>6 -23 990 738 0 0 1440 877 </string>
+	<string>6 -21 1130 830 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>149 -77 990 717 0 0 1440 877 </string>
+	<string>7 6 1130 809 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>234 1185 990 716 84 900 1280 1001 </string>
 	<key>New Bookmarks</key>
@@ -1085,7 +1085,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>140</integer>
+			<integer>120</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -1444,7 +1444,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>InputMono-Regular 11</string>
+			<string>InputMono-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1452,7 +1452,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>46</integer>
+			<integer>40</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -1610,7 +1610,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1.0267630815505981</real>
+			<real>1.1306787442012005</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1624,7 +1624,7 @@
 	<key>NoSyncHaveShownPromoWithId_4</key>
 	<true/>
 	<key>NoSyncLastTipTime</key>
-	<real>480469055.20792598</real>
+	<real>480566306.78557599</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1663,6 +1663,7 @@
 		<string>0017</string>
 		<string>0018</string>
 		<string>0019</string>
+		<string>0020</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1712,7 +1713,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/jackfahnestock/dotfiles</string>
+	<string>/Users/jackfahnestock/dotfiles/iTerm</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1730,7 +1731,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-03-24T16:38:00Z</date>
+	<date>2016-03-25T21:18:04Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
