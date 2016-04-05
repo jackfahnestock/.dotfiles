@@ -11,7 +11,7 @@
     ]
   editor:
     fontFamily: "input mono"
-    fontSize: 16
+    fontSize: 17
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true

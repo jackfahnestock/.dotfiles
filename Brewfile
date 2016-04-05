@@ -24,7 +24,6 @@ brew 'zsh'
 
 cask 'atom'
 cask 'dropbox'
-cask 'firefox'
 cask 'google-chrome-beta'
 cask 'imageoptim'
 cask 'iterm2'
