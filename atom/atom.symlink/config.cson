@@ -9,6 +9,10 @@
       "Gemfile.lock"
       "npm-debug.log"
     ]
+    themes: [
+      "one-dark-ui"
+      "cake-syntax"
+    ]
   editor:
     fontFamily: "input mono"
     fontSize: 17
@@ -21,6 +25,10 @@
   emmet: {}
   "exception-reporting":
     userId: "b0b46957-3dff-7a8d-47a4-c22f5de7b8ae"
+  "file-icons":
+    forceShow: true
+    onChanges: true
+  "one-dark-ui": {}
   pigments:
     markerType: "dot"
   "tree-view":
