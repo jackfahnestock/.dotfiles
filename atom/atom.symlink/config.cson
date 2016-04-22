@@ -29,8 +29,7 @@
     forceShow: true
     onChanges: true
   "one-dark-ui": {}
-  pigments:
-    markerType: "dot"
+  pigments: {}
   "tree-view":
     hideIgnoredNames: true
   welcome:
