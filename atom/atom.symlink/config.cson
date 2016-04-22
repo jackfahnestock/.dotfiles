@@ -11,7 +11,7 @@
     ]
     themes: [
       "one-dark-ui"
-      "cake-syntax"
+      "gruvbox-syntax"
     ]
   editor:
     fontFamily: "input mono"
