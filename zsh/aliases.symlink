@@ -43,5 +43,3 @@ alias gl='git lg'
 alias s='git status -sb'
 
 setopt complete_aliases
-
-# test
