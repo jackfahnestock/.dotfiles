@@ -23,6 +23,7 @@ alias vimrc="vim $HOME/.vimrc"
 alias zshrc="vim $HOME/.zshrc"
 alias dot="cd $HOME/dotfiles"
 alias me="cd $HOME/workspace/jackf.me"
+alias dc="cd $HOME/workspace/designclub"
 alias reload="source $HOME/.zshrc"
 
 # `bundle exec` can be a bit long.
