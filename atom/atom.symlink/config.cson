@@ -9,6 +9,7 @@
       "Gemfile.lock"
       "npm-debug.log"
     ]
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "gruvbox-syntax"
