@@ -1,7 +1,7 @@
 # My Dotfiles
 
 Sources:
-- [Like 95% of Dan Eden's dotfiles][1]
+- [Dan Eden's dotfiles][1]
 - [Mathias Bynens's OSX Settings][2]
 - [Unofficial Dotfiles Guide][3]
 
