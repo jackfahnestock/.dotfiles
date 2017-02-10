@@ -27,11 +27,11 @@ atom-text-editor {
 }
 
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow .cursor {
+syntax--atom-text-editor .cursor {
   // border-color: red;
 }
 
 // CUSTOM
-atom-text-editor::shadow pigments-markers::shadow pigments-color-marker.dot, pigments-markers::shadow pigments-color-marker.dot, pigments-color-marker.dot {
+syntax--atom-text-editor syntax--pigments-markers pigments-color-marker.dot, syntax--pigments-markers pigments-color-marker.dot, pigments-color-marker.dot {
   transform: translate(20%, -50%) scale(.7);
 }

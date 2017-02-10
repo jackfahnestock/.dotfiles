@@ -33,7 +33,7 @@
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
-	<true/>
+	<false/>
 	<key>DimOnlyText</key>
 	<false/>
 	<key>DisableFullscreenTransparency</key>
@@ -129,13 +129,17 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>445 400 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 364 620 392 0 0 1440 877 </string>
+	<string>412 363 620 392 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>184 1098 606 456 -240 900 1920 1080 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>382 184 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>6 -21 1130 830 0 0 1440 877 </string>
+	<string>-240 913 1618 864 -240 900 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>7 6 1130 809 0 0 1440 877 </string>
+	<string>7 108 970 707 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>234 1185 990 716 84 900 1280 1001 </string>
 	<key>New Bookmarks</key>
@@ -1621,10 +1625,26 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
 	<key>NoSyncHaveShownPromoWithId_4</key>
 	<true/>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
+	<key>NoSyncInstallationId</key>
+	<string>42729706-C61B-42BC-9762-5DA49FA367C2</string>
 	<key>NoSyncLastTipTime</key>
-	<real>480566306.78557599</real>
+	<real>482113007.00252599</real>
+	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
+	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1637,6 +1657,8 @@
 	<real>477616680.09690398</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
 	<real>477603424.18875098</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -1664,6 +1686,20 @@
 		<string>0018</string>
 		<string>0019</string>
 		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0032</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1727,11 +1763,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=12</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-03-25T21:18:04Z</date>
+	<date>2017-01-12T05:03:05Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1781,7 +1817,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>2.9.20160313</string>
+	<string>3.0.13</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

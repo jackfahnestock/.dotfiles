@@ -42,5 +42,16 @@ alias gpl='git pull'
 alias gs='git status -sb'
 alias gl='git lg'
 alias s='git status -sb'
+alias mast='git co master'
 
 setopt complete_aliases
+
+# rails aliases
+alias r='rails'
+alias rt='rails test'
+alias rc='rails console'
+alias rgc='rails generate controller'
+alias rdbm='rails db:migrate'
+
+# ngrok
+alias ngrok='~/ngrok'
