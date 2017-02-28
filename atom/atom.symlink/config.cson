@@ -1,4 +1,6 @@
 "*":
+  "color-picker":
+    preferredFormat: "HEX"
   core:
     ignoredNames: [
       ".sass-cache"
@@ -7,16 +9,19 @@
       "node_modules"
       ".jekyll-metadata"
       "Gemfile.lock"
-      "npm-debug.log"
+      "npm-debug.log*"
+      ".keep"
+      ".byebug_history"
     ]
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "gruvbox-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "input mono"
-    fontSize: 17
+    fontSize: 18
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -27,10 +32,19 @@
   "exception-reporting":
     userId: "b0b46957-3dff-7a8d-47a4-c22f5de7b8ae"
   "file-icons":
+    coloured: false
     forceShow: true
     onChanges: true
-  "one-dark-ui": {}
-  pigments: {}
+  linter: {}
+  "linter-eslint":
+    lintHtmlFiles: true
+    useGlobalEslint: true
+  "one-dark-ui":
+    layoutMode: "Spacious"
+  pigments:
+    extendAutocompleteToColorValue: true
+    extendAutocompleteToVariables: true
+    markerType: "dot"
   "tree-view":
     hideIgnoredNames: true
   welcome:

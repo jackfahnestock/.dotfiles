@@ -34,6 +34,7 @@ alias groot='cd "$(git rev-parse --show-toplevel)"'
 
 # Git aliases
 alias g='git'
+alias all='git add .'
 alias gap='git add -p'
 alias gcm='git commit -S -m'
 alias gcam='git commit -S -am'
@@ -52,6 +53,7 @@ alias rt='rails test'
 alias rc='rails console'
 alias rgc='rails generate controller'
 alias rdbm='rails db:migrate'
+alias fs='foreman start'
 
 # ngrok
 alias ngrok='~/ngrok'
