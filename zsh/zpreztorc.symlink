@@ -127,7 +127,7 @@ zstyle ':prezto:module:history-substring-search' globbing-flags ''
 zstyle ':prezto:module:autosuggestions' color 'yes'
 
 # Set the query found color.
-# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions:color' found ''
 
 #===============================================================================
 # GNU Utility

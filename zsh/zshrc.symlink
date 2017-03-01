@@ -14,6 +14,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+
+
 #===============================================================================
 # General
 #===============================================================================
@@ -25,7 +27,7 @@ export LC_CTYPE=en_US.UTF-8
 # (Except in ssh, which is actually pretty handy)
 export DEFAULT_USER=`whoami`
 
-export EDITOR='nvim'
+export EDITOR='nano'
 export VISUAL=$EDITOR
 
 # Base16 Shell
@@ -35,11 +37,15 @@ export BASE16_SHELL="$HOME/.config/base16-shell/base16-google.dark.sh"
 # Load completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+
+
 #===============================================================================
 # Aliases
 #===============================================================================
 
 source $HOME/dotfiles/zsh/aliases.symlink
+
+
 
 #===============================================================================
 # Wrap it up
@@ -50,24 +56,9 @@ if [[ -s "$HOME/dotfiles/zsh/xterm-256color-italic.terminfo" ]]; then
   tic "$HOME/dotfiles/zsh/xterm-256color-italic.terminfo"
 fi
 
-# Activate virtual environment if one exists
-if [[ -s "$HOME/.virt_env/bin/activate" ]]; then
-  source "$HOME/.virt_env/bin/activate"
-fi
-
 # export PATH="$HOME/.rbenv/bin:$PATH"
 # export PATH="$HOME/.bin:$PATH"
 # eval "$(rbenv init -)"
-
-# Set up themes
-autoload -U promptinit && promptinit
-prompt agnoster
-
-# Set a custom delay for git dirty status check (defaults to 1800 seconds)
-PURE_GIT_DELAY_DIRTY_CHECK=5
-
-# Set a custom prompt symbol
-# PURE_PROMPT_SYMBOL="❯"
 
 
 

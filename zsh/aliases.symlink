@@ -1,9 +1,12 @@
 
-
+# Misc #########################################################################
+alias c='clear'
 alias show='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias stats='iStats'
-alias c='clear'
+alias zshrc="nano $HOME/.zshrc"
+alias dot="cd $HOME/dotfiles"
+alias reload="source $HOME/.zshrc"
 
 # A handy utility for making and then cd-ing to a directory
 function __mkc {
@@ -15,39 +18,20 @@ function __mkc {
 
 alias mkc="__mkc"
 
-# Alias to nvim
-alias vim="nvim"
 
-# Make editing config files easier/less meta
-alias vimrc="vim $HOME/.vimrc"
-alias zshrc="vim $HOME/.zshrc"
-alias dot="cd $HOME/dotfiles"
-alias me="cd $HOME/workspace/jackf.me"
-alias dc="cd $HOME/workspace/designclub"
-alias reload="source $HOME/.zshrc"
-
-# `bundle exec` can be a bit long.
-alias be="bundle exec"
-
-# Easily jump to the root of a git repo
-alias groot='cd "$(git rev-parse --show-toplevel)"'
-
-# Git aliases
+# Git ##########################################################################
 alias g='git'
 alias all='git add .'
-alias gap='git add -p'
 alias gcm='git commit -S -m'
 alias gcam='git commit -S -am'
 alias gps='git push'
 alias gpl='git pull'
 alias gs='git status -sb'
 alias gl='git lg'
-alias s='git status -sb'
 alias mast='git co master'
 
-setopt complete_aliases
 
-# rails aliases
+# Rails ########################################################################
 alias r='rails'
 alias rt='rails test'
 alias rc='rails console'
@@ -55,5 +39,6 @@ alias rgc='rails generate controller'
 alias rdbm='rails db:migrate'
 alias fs='foreman start'
 
-# ngrok
+
+# Ngrok ########################################################################
 alias ngrok='~/ngrok'
