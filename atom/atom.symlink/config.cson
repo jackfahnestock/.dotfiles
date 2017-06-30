@@ -18,10 +18,10 @@
       "one-dark-ui"
       "gruvbox-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     fontFamily: "input mono"
-    fontSize: 18
+    fontSize: 19
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -39,8 +39,9 @@
   "linter-eslint":
     lintHtmlFiles: true
     useGlobalEslint: true
-  "one-dark-ui":
-    layoutMode: "Spacious"
+  "linter-ui-default":
+    panelHeight: 69
+  "one-dark-ui": {}
   pigments:
     extendAutocompleteToColorValue: true
     extendAutocompleteToVariables: true

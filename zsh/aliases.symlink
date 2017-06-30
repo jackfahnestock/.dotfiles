@@ -21,6 +21,7 @@ alias mkc="__mkc"
 
 # Git ##########################################################################
 alias g='git'
+alias add='git add'
 alias all='git add .'
 alias gcm='git commit -S -m'
 alias gcam='git commit -S -am'
@@ -36,9 +37,15 @@ alias r='rails'
 alias rt='rails test'
 alias rc='rails console'
 alias rgc='rails generate controller'
+alias rgm='rails generate model'
 alias rdbm='rails db:migrate'
 alias fs='foreman start'
 
 
 # Ngrok ########################################################################
 alias ngrok='~/ngrok'
+
+
+# Other
+alias python='python3'
+alias pip='pip3'
